@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # The Uniswap V3 SDK
 
-Welcome to the Uniswap Protocol V3 SDK. To begin, we recommend looking at the [**Guides**](./guides/01-quick-start.md), for deeper reference see the [**SDK Github**](https://github.com/Uniswap/uniswap-v3-sdk) repo.
+Welcome to the Astraly Protocol V3 SDK. To begin, we recommend looking at the [**Guides**](./guides/01-quick-start.md), for deeper reference see the [**SDK Github**](https://github.com/Uniswap/uniswap-v3-sdk) repo.
 
 # Alpha software
 

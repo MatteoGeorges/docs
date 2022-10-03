@@ -24,25 +24,25 @@ import {
 
 export const actions = [
   {
-    title: 'What is Uniswap',
+    title: 'What is Astraly',
     href: '#',
     icon: InformationCircleIcon,
     to: './protocol/introduction',
-    text: `Learn about the core concepts of the Uniswap Protocol. Swaps, Pools, Concentrated Liquidity and more.`,
+    text: `Learn about the Astraly reputation protocol. Core concepts, vision and next developments.`,
   },
   {
     title: 'Smart contract overview',
     href: '#',
     icon: BookOpenIcon,
     to: './protocol/reference/smart-contracts',
-    text: `Learn about the architecture of the Uniswap Protocol smart contracts made up of the Core and Periphery libraries.`,
+    text: `Learn about the architecture of the Astraly Protocol smart contracts. Cairo will be your best friend.`,
   },
   {
-    title: 'V3 SDK',
+    title: 'Astraly SDK',
     href: '#',
     icon: QuestionMarkCircleIcon,
-    to: './sdk/introduction',
-    text: `The SDK is designed to assist developers when interacting with the protocol in any environment that can execute JavaScript.`,
+    to: './',
+    text: `Soon available for developers for easy on-chain reputation primitives for your DApp.`,
   },
 ]
 
@@ -292,7 +292,7 @@ const HideMedium = styled.div`
 
 export default function Home() {
   return (
-    <Layout title={`Uniswap Docs`} description="Technical Documentation For The Uniswap Protocol">
+    <Layout title={`Astraly Docs`} description="Technical Documentation For The Astraly Protocol">
       <Container>
         <DocsHeader>
           <div
@@ -304,7 +304,7 @@ export default function Home() {
               alignItems: 'center',
             }}
           >
-            <h1 style={{ fontWeight: '600' }}> Welcome to the Uniswap Docs</h1>
+            <h1 style={{ fontWeight: '600' }}> Welcome to the Astraly Documentation</h1>
             <HideMedium>
               <SearchBar />{' '}
             </HideMedium>
@@ -337,8 +337,8 @@ export default function Home() {
           <StyledTitleImage
             alt="Docusaurus themed image"
             sources={{
-              light: useBaseUrl('/img/grow.png'),
-              dark: useBaseUrl('/img/grow2.png'),
+              light: useBaseUrl('/img/astralybg.jpeg'),
+              dark: useBaseUrl('/img/astralybg.jpeg'),
             }}
           />
           <Row>
@@ -376,7 +376,7 @@ export default function Home() {
           <div>
             <h2>Getting Started</h2>
             <p>
-              Explore these docs to get started integrating the Uniswap Protocol in your dApp, smart contract or
+              Explore these docs to get started integrating the Astraly Protocol in your dApp, smart contract or
               project.
             </p>
             <div>

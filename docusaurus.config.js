@@ -2,15 +2,15 @@ const math = require('remark-math')
 const katex = require('rehype-katex')
 
 module.exports = {
-  title: 'Uniswap',
+  title: 'Astraly',
   tagline: 'Documentation and Guides',
-  url: 'https://docs.uniswap.org/',
+  url: 'https://docs.astraly.xyz/',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon.png',
-  organizationName: 'Uniswap', // Usually your GitHub org/user name.
-  projectName: 'Uniswap-docs', // Usually your repo name.
+  organizationName: 'Astraly', // Usually your GitHub org/user name.
+  projectName: 'Astraly-docs', // Usually your repo name.
   themeConfig: {
     image: 'img/twitter_card_bg.jpg',
     prism: {
@@ -22,10 +22,10 @@ module.exports = {
       appId: 'S0IDD0YGLZ',
     },
     navbar: {
-      title: 'Uniswap Docs',
+      title: 'Astraly Docs',
       logo: {
-        alt: 'Uniswap Unicorn',
-        src: 'img/uni_dark_icon.svg',
+        alt: 'Astraly Asteroid',
+        src: 'img/ast_dark_icon.svg',
       },
       items: [
         {
