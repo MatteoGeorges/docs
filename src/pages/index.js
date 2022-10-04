@@ -7,6 +7,7 @@ import './styles.module.css'
 import styled from '@emotion/styled'
 
 import Discord from '@site/static/img/discord.svg'
+import Twitter from '@site/static/img/twitter.svg'
 import UGP from '@site/static/img/UGP.png'
 
 import ThemedImage from '@theme/ThemedImage'
@@ -171,7 +172,7 @@ const Card = styled.div`
   justify-content: center;
   cursor: pointer;
   border: 1px solid transparent;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1px solid var(--ifm-color-emphasis-200);
   /* flex: 1 1 0px; */
 
@@ -201,6 +202,24 @@ const CenterCard = styled(Card)`
 
   p {
     margin-bottom: 0px;
+  }
+`
+
+const Footer = styled(Card)`
+  width: 90%;
+  position: relative;
+  min-height: 100px;
+  border-radius: 10px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  cursor: unset;
+  overflow: hidden;
+  padding: unset;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  &:hover {
+    border: 1px solid var(--ifm-color-emphasis-300);
+    cursor: unset;
   }
 `
 
@@ -274,7 +293,16 @@ const StyledTitleImage = styled(StyledImage)`
   object-fit: cover;
   z-index: -1;
   position: absolute;
-  opacity: 0.2;
+  opacity: 0.7;
+  mask-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
+`
+
+const StyledFooterImage = styled(StyledImage)`
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 1;
   mask-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
 `
 
@@ -304,10 +332,10 @@ export default function Home() {
               alignItems: 'center',
             }}
           >
-            <h1 style={{ fontWeight: '600' }}> Welcome to the Astraly Documentation</h1>
-            <HideMedium>
-              <SearchBar />{' '}
-            </HideMedium>
+            <h1 style={{ fontWeight: '600' }}> Astraly Documentation</h1>
+            {/* <HideMedium>
+              <SearchBar />
+            </HideMedium> */}
             {/* <p
               style={{
                 maxWidth: "640px",
@@ -404,7 +432,7 @@ export default function Home() {
           </div>
           <div>
             <h2>Developer Links</h2>
-            <p>The Uniswap codebase is comprised of an ecosystem of open source components.</p>
+            <p>The Astraly codebase is comprised of an ecosystem of open source components.</p>
             {github.map((action) => (
               <Link style={{ textDecoration: 'none' }} href={action.href}>
                 <Card key={action.title} style={{ marginBottom: '1rem' }}>
@@ -468,7 +496,7 @@ export default function Home() {
         </TwoRow>
 
         <hr />
-        <TwoRow
+        {/* <TwoRow
           style={{
             gap: '48px',
             alignItems: 'center',
@@ -509,24 +537,27 @@ export default function Home() {
           </div>
         </TwoRow>
 
-        <hr />
-
+        <hr /> */}
         <Row>
-          <Link style={{ textDecoration: 'none' }} href={'https://discord.gg/ybKVQUWb4s'}>
+          <h2>Stay Connected</h2>
+          <h2></h2>
+          <h2></h2>
+
+          <Link style={{ textDecoration: 'none' }} href={'https://discord.com/invite/astralyxyz'}>
             <CenterCard>
               <Discord style={{ width: '48px', height: '48px' }} />
               <div>
                 <h3>Discord</h3>
-                <p>Hop in to the #dev-chat to get realtime help.</p>
+                <p>Hop in to the community on Discord.</p>
               </div>
             </CenterCard>
           </Link>
-          <Link style={{ textDecoration: 'none' }} href={'https://gov.uniswap.org/'}>
+          <Link style={{ textDecoration: 'none' }} href={'https://twitter.com/AstralyXYZ'}>
             <CenterCard>
-              <ChatIcon style={{ width: '48px', height: '48px' }} />
+              <Twitter style={{ width: '48px', height: '48px' }} />
               <div>
-                <h3>Forum</h3>
-                <p>Discuss governance and more.</p>
+                <h3>Twitter</h3>
+                <p>Follow Astraly on Twitter to get the latest news</p>
               </div>
             </CenterCard>
           </Link>
@@ -576,19 +607,19 @@ export default function Home() {
               </StyledGithubIcon>
               <div>
                 <h3>GitHub</h3>
-                <p>View all Uniswap repositories.</p>
+                <p>View all Astraly repositories.</p>
               </div>
             </CenterCard>
           </Link>
         </Row>
-        <Link
+        {/* <Link
           style={{
             textDecoration: 'none',
             maxWidth: '960px',
             margin: '0 auto 4rem auto',
             width: '100%',
           }}
-          href={'https://unigrants.org/'}
+          href={'/'}
         >
           <WideCard
             style={{
@@ -607,7 +638,40 @@ export default function Home() {
               </p>
             </div>
           </WideCard>
-        </Link>
+        </Link> */}
+        <Footer>
+          {' '}
+          <StyledFooterImage
+            alt="Docusaurus themed image"
+            sources={{
+              light: useBaseUrl('/img/astralybg.jpeg'),
+              dark: useBaseUrl('/img/astralybg.jpeg'),
+            }}
+          />
+          <h1
+            style={{
+              position: 'absolute',
+              left: '0',
+              right: '0',
+              margin: 'auto',
+              width: '400px',
+            }}
+          >
+            Your keys, your reputation
+          </h1>
+          <img
+            src="/img/astraly.png"
+            style={{
+              position: 'absolute',
+              right: '0',
+              left: '0',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              bottom: '10px',
+              width: '200px',
+            }}
+          ></img>
+        </Footer>
       </Container>
     </Layout>
   )

@@ -29,60 +29,22 @@ module.exports = {
       },
       items: [
         {
-          type: 'docsVersionDropdown',
-          //// Optional
-          position: 'left',
-          dropdownActiveClassDisabled: true,
-          docsPluginId: 'default',
-          className: 'persistent',
+          to: '/protocol/V2/guides/smart-contract-integration/quick-start',
+          label: 'Intro',
+          position: 'right',
+          className: 'V3_active',
         },
         {
           to: '/protocol/reference/smart-contracts',
           label: 'Contracts',
-          position: 'left',
-          className: 'V3_active',
-        },
-        {
-          to: '/sdk/introduction',
-          label: 'SDK',
-          position: 'left',
-          className: 'V3_active',
-        },
-        {
-          to: '/sdk/widgets/swap-widget',
-          label: 'Widgets',
-          position: 'left',
-          className: 'V3_active',
-        },
-        {
-          to: '/sdk/subgraph/subgraph-data',
-          label: 'Subgraph (API)',
-          position: 'left',
+          position: 'right',
           className: 'V3_active',
         },
         {
           to: '/protocol/concepts/governance/overview',
           label: 'Governance',
-          position: 'left',
+          position: 'right',
           className: 'V3_active',
-        },
-        {
-          to: '/protocol/V2/guides/smart-contract-integration/quick-start',
-          label: 'Contracts',
-          position: 'left',
-          className: 'V2_active',
-        },
-        {
-          to: '/sdk/2.0.0/',
-          label: 'SDK',
-          position: 'left',
-          className: 'V2_active',
-        },
-        {
-          to: '/protocol/V2/reference/API/overview',
-          label: 'Subgraph (API)',
-          position: 'left',
-          className: 'V2_active',
         },
         {
           to: '/protocol/concepts/governance/overview',
@@ -109,118 +71,18 @@ module.exports = {
           className: 'persistent',
         },
         {
-          label: 'Whitepaper',
-          to: 'https://uniswap.org/whitepaper-v3.pdf',
-          position: 'right',
-          className: 'persistent',
-        },
-        {
           href: 'https://github.com/uniswap/uniswap-docs',
           label: 'GitHub',
           position: 'right',
           className: 'persistent',
         },
-        {
-          href: 'https://unigrants.org/',
-          label: 'Grants',
-          position: 'right',
-          className: 'persistent',
-        },
+        // {
+        //   href: 'https://unigrants.org/',
+        //   label: 'Grants',
+        //   position: 'right',
+        //   className: 'persistent',
+        // },
       ],
-    },
-    footer: {
-      // style: "dark",
-      links: [
-        {
-          title: 'Developers',
-          items: [
-            {
-              label: 'Feedback',
-              href: 'https://forms.gle/13XtjmkwdXQ2jMn26',
-            },
-            {
-              label: 'Bug Bounty',
-              href: 'https://github.com/Uniswap/uniswap-v3-periphery/blob/main/bug-bounty.md',
-            },
-            {
-              label: '#dev-chat',
-              href: 'https://discord.gg/ybKVQUWb4s',
-            },
-            {
-              label: 'Whitepaper',
-              href: 'https://uniswap.org/whitepaper-v3.pdf',
-            },
-          ],
-        },
-        {
-          title: 'Github',
-          items: [
-            {
-              label: 'uniswap-v3-core',
-              href: 'https://github.com/Uniswap/uniswap-v3-core',
-            },
-            {
-              label: 'uniswap-v3-sdk',
-              href: 'https://github.com/Uniswap/uniswap-v3-sdk',
-            },
-            {
-              label: 'uniswap-v3-periphery',
-              href: 'https://github.com/Uniswap/uniswap-v3-periphery',
-            },
-            {
-              label: 'Deployment addresses',
-              href: 'https://github.com/Uniswap/uniswap-v3-periphery/blob/main/deploys.md',
-            },
-          ],
-        },
-        {
-          title: 'Ecosystem',
-          items: [
-            {
-              label: 'Home',
-              href: 'https://uniswap.org/',
-            },
-            {
-              label: 'App',
-              href: 'https://app.uniswap.org/',
-            },
-            {
-              label: 'Analytics',
-              href: 'https://info.uniswap.org/home',
-            },
-            {
-              label: 'Token Lists',
-              href: 'https://tokenlists.org/',
-            },
-            {
-              label: 'Brand Assets',
-              href: 'https://uniswap.org/Uniswap_brand_assets.zip',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Governance',
-              href: 'https://gov.uniswap.org/',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/ybKVQUWb4s',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/Uniswap',
-            },
-            {
-              label: 'Blog',
-              href: 'https://uniswap.org/blog/',
-            },
-          ],
-        },
-      ],
-      // copyright: `unlicensed`,
     },
     colorMode: {
       // "light" | "dark"
