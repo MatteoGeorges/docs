@@ -84,10 +84,10 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          path: 'protocol',
+          path: 'docs',
           remarkPlugins: [math],
           rehypePlugins: [katex],
-          routeBasePath: 'protocol/',
+          routeBasePath: '/docs',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/uniswap/uniswap-docs/tree/main/',
           includeCurrentVersion: false,
