@@ -49,28 +49,23 @@ export const actions = [
 
 export const github = [
   {
-    title: 'uniswap-v3-core',
-    href: 'https://github.com/Uniswap/uniswap-v3-core',
+    title: 'astraly-contracts',
+    href: 'https://github.com/Astraly-Labs/astraly-contracts',
     icon: CodeIcon,
   },
   {
-    title: 'uniswap-v3-sdk',
-    href: 'https://github.com/Uniswap/uniswap-v3-sdk',
+    title: 'astraly-api',
+    href: 'https://github.com/Astraly-Labs/astraly-api',
     icon: CodeIcon,
   },
   {
-    title: 'uniswap-v3-periphery',
-    href: 'https://github.com/Uniswap/uniswap-v3-periphery',
+    title: 'astraly-frontend',
+    href: 'https://github.com/Astraly-Labs/astraly-frontend',
     icon: CodeIcon,
   },
   {
-    title: 'Deployment addresses',
-    href: 'https://github.com/Uniswap/uniswap-v3-periphery/blob/main/deploys.md',
-  },
-  {
-    title: '@uniswap/widgets',
-    href: 'https://www.npmjs.com/package/@uniswap/widgets',
-    icon: CodeIcon,
+    title: 'starknet-libs',
+    href: 'https://github.com/Astraly-Labs/starknet-libs',
   },
 ]
 
@@ -336,31 +331,24 @@ export default function Home() {
             {/* <HideMedium>
               <SearchBar />
             </HideMedium> */}
-            {/* <p
+            <p
               style={{
-                maxWidth: "640px",
-                margin: "1rem ",
+                maxWidth: '640px',
+                margin: '1rem ',
                 fontWeight: 500,
               }}
             >
-              The pages that follow contain comprehensive documentation of the
-              Uniswap ecosystem. If you are new to Uniswap, you might want to
-              check out the{" "}
-              <Link
-                style={{ color: "#ff007a" }}
-                to="https://docs.uniswap.org/protocol/introduction"
-              >
+              Welcome to the documentation of Astraly. Here you will find everything you need to understand the
+              application, the protocol and our vision.
+              {/* <Link style={{ color: '#ff007a' }} to="https://docs.uniswap.org/protocol/introduction">
                 Protocol Overview
-              </Link>{" "}
-              or{" "}
-              <Link
-                style={{ color: "#ff007a" }}
-                to="https://help.uniswap.org/en/collections/3033722-faq"
-              >
+              </Link>{' '}
+              or{' '}
+              <Link style={{ color: '#ff007a' }} to="https://help.uniswap.org/en/collections/3033722-faq">
                 FAQ
-              </Link>{" "}
-              first.
-            </p> */}
+              </Link>{' '}
+              first. */}
+            </p>
           </div>
           <StyledTitleImage
             alt="Docusaurus themed image"
@@ -369,6 +357,7 @@ export default function Home() {
               dark: useBaseUrl('/img/astralybg.jpeg'),
             }}
           />
+          <h2>Getting Started</h2>
           <Row>
             {actions.map((action) => (
               <Link style={{ textDecoration: 'none' }} to={action.to}>
@@ -401,7 +390,7 @@ export default function Home() {
             marginTop: '4rem',
           }}
         >
-          <div>
+          {/* <div>
             <h2>Getting Started</h2>
             <p>
               Explore these docs to get started integrating the Astraly Protocol in your dApp, smart contract or
@@ -429,10 +418,10 @@ export default function Home() {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
           <div>
             <h2>Developer Links</h2>
-            <p>The Astraly codebase is comprised of an ecosystem of open source components.</p>
+            <p>Find useful repositories, to integrate Astraly to your Dapp, or to start developing on Starknet.</p>
             {github.map((action) => (
               <Link style={{ textDecoration: 'none' }} href={action.href}>
                 <Card key={action.title} style={{ marginBottom: '1rem' }}>
@@ -502,7 +491,7 @@ export default function Home() {
             alignItems: 'center',
           }}
         >
-          <StyledImage
+          <StyledImage©
             style={{ maxHeight: '400px' }}
             sources={{
               light: useBaseUrl('/img/use.png'),
@@ -562,7 +551,7 @@ export default function Home() {
             </CenterCard>
           </Link>
 
-          <Link style={{ textDecoration: 'none' }} href={'https://github.com/Uniswap'}>
+          <Link style={{ textDecoration: 'none' }} href={'https://github.com/Astraly-Labs'}>
             <CenterCard>
               <StyledGithubIcon>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.78 117.79" style={{ width: '48px' }}>
@@ -659,19 +648,15 @@ export default function Home() {
           >
             Your keys, your reputation
           </h1>
-          <img
-            src="/img/astraly.png"
-            style={{
-              position: 'absolute',
-              right: '0',
-              left: '0',
-              marginLeft: 'auto',
-              marginRight: 'auto',
-              bottom: '10px',
-              width: '200px',
-            }}
-          ></img>
         </Footer>
+        <img
+          src="/img/astraly.png"
+          style={{
+            width: '200px',
+            margin: 'auto',
+            padding: '20px',
+          }}
+        ></img>
       </Container>
     </Layout>
   )

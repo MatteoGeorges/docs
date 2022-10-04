@@ -29,49 +29,31 @@ module.exports = {
       },
       items: [
         {
-          to: '/protocol/V2/guides/smart-contract-integration/quick-start',
+          to: '/introduction',
           label: 'Intro',
           position: 'right',
-          className: 'V3_active',
+          className: 'persistent',
         },
         {
           to: '/protocol/reference/smart-contracts',
           label: 'Contracts',
           position: 'right',
-          className: 'V3_active',
+          className: 'persistent',
         },
         {
           to: '/protocol/concepts/governance/overview',
           label: 'Governance',
-          position: 'right',
-          className: 'V3_active',
-        },
-        {
-          to: '/protocol/concepts/governance/overview',
-          label: 'Governance',
-          position: 'left',
-          className: 'V2_active',
-        },
-        {
-          to: '/protocol/V1/guides/connect-to-uniswap',
-          label: 'Contracts',
-          position: 'left',
-          className: 'V1_active',
-        },
-        {
-          to: '/sdk/1.0.0/',
-          label: 'SDK',
-          position: 'left',
-          className: 'V1_active',
-        },
-        {
-          label: 'Give Feedback',
-          to: 'https://forms.gle/13XtjmkwdXQ2jMn26',
           position: 'right',
           className: 'persistent',
         },
         {
-          href: 'https://github.com/uniswap/uniswap-docs',
+          label: 'Give Feedback',
+          to: 'https://forms.gle/KvLdKnLprrER3VyM6',
+          position: 'right',
+          className: 'persistent',
+        },
+        {
+          href: 'https://github.com/Astraly-Labs',
           label: 'GitHub',
           position: 'right',
           className: 'persistent',
@@ -110,12 +92,6 @@ module.exports = {
           editUrl: 'https://github.com/uniswap/uniswap-docs/tree/main/',
           includeCurrentVersion: false,
           versions: {
-            V3: {
-              banner: 'none',
-            },
-            V2: {
-              banner: 'none',
-            },
             V1: {
               banner: 'none',
             },

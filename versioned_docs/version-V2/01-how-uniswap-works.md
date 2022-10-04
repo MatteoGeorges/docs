@@ -1,12 +1,14 @@
 ---
 id: introduction
-title: The Uniswap V2 Protocol
+title: The Astraly Documentation
 sidebar_position: 1
 ---
 
-Welcome to the Uniswap protocol V2 docs.
+Welcome to the Astraly documentation.
 
-The pages here contain conceptual and technical documentation of the Uniswap V2 protocol.
+The pages here contain conceptual and technical documentation of Astraly protocol and application.
+
+You'll find here what we're building, and where we're heading.
 
 If you are new to Uniswap, you might want to check out the [Protocol overview](../V2/concepts/protocol-overview/how-uniswap-works) first.
 
