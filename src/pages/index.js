@@ -424,7 +424,7 @@ export default function Home() {
           <div>
             <h2>Developer Links</h2>
             <p>Find useful repositories, to integrate Astraly to your Dapp, or to start developing on Starknet.</p>
-            <TwoRow style={{ gridGap: 'unset' }}>
+            <TwoRow style={{ gridGap: '10px' }}>
               {github.map((action) => (
                 <Link style={{ textDecoration: 'none' }} href={action.href}>
                   <Card key={action.title} style={{ marginBottom: '1rem' }}>

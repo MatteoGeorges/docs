@@ -89,7 +89,7 @@ module.exports = {
           rehypePlugins: [katex],
           routeBasePath: '/docs',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/uniswap/uniswap-docs/tree/main/',
+          // editUrl: 'https://github.com/uniswap/uniswap-docs/tree/main/',
           includeCurrentVersion: false,
           versions: {
             V1: {
