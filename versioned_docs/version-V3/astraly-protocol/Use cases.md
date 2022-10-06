@@ -1,77 +1,36 @@
 ---
-id: scores
-title: Scores
-sidebar_position: 3
+id: use-cases
+title: Use cases
+sidebar_position: 2
 ---
 
 ---
 
-Astraly Badges are non-transferable NFTs following the [**ERC-4973**](https://eips.ethereum.org/EIPS/eip-4973) standard, adapted to Starknet's Account Abstraction model.
+Reputation has a use case for any application already live, or for any user of the blockchain, and even anyone not using the blockchain. In fact, using the blockchain as a place to store credentials, social graphs and more solves a lot of problems, including those discussed in the introduction. From there, we build the architecture to accommodate the next wave of users, who will be able to use their digital reputation without even knowing they are using the blockchain for that.
 
-A badge can represent any kind of on-chain activity :
+There are many use cases, here is a collection of use cases, if you are a builder and want to get some ideas, or if you are just interested in the use cases of on-chain reputation.
 
-User A was holding at least 1 ETH before the DAO hack
-User A was holding at least 2 ENS domains on 08/09/2020
-User A added liquidity to the ETH/USDC pool on Uniswap V2 for at least 1000$ during the covid crackdown
-User A interacted with Aave, Compound and Curve in 2020
-User A posted 50+ posts using Lens social graph
+## Governance
 
-Imagine any kind of on-chain activity, well you'll be able to mint a badge certifying it.
+Governance is one of the use cases we are most excited about. Indeed, almost no human organization today is based on a Plutocracy type of governance, i.e. a governance based on wealth. Until now, in the Web3 world, we have only used token voting, and therefore a system that is not very fair, making the organizations sometimes not very functional.
+Astraly will change everything, and bring a reputation based voting, making web3 organizations more functional and fair.
+Moreover, since Snapshot X is currently being developed on Starknet, reputation based voting will be very easily accessible for all organizations in the Ethereum ecosystem.
+The reputation based voting can rely on several algorithms available on Astraly. Indeed, a first reputation score of the project, including the different contributions, social interactions, and evaluating the involvement of the users can be calculated. Then, it is possible to combine this with a clustering algorithm, which will identify close actors, with common interests, and potentially bots. From there we can build fairer governance systems, and allow better on-chain organizations.
 
-  <div>
-  <img width="100%" height="100%" src="https://4086585041-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FG0TggWALo9xfCaYfuNXI%2Fuploads%2FdMgcBDwaUZjnVtY9jqT2%2Fimage.png?alt=media&token=abcbb5fd-e76d-43ea-89bc-8288c2f477f0" />
-  </div>
+## Gaming
 
-Astraly Badges have the following properties :
+On-chain gaming is still a nascent field on Starknet, but has a bright future. Indeed, the composability promised by on-chain gaming will take the industry to another level. Hence, a reputation aggregation system between the different on-chain games will be very important for achievements and matchmaking. If each game sets up its own reputation system, not on-chain, the lack of composability will be a problem. With Astraly's infrastructure, games will be able to directly integrate their on-chain reputation system, and gamers will have their profile directly accessible for all games, and will benefit from this reputation system, for matchmaking or different achievements.
 
-TRUSTLESS
-INTEROPERABLE
-COMPOSABLE
-ZERO-KNOWLEDGE
+## Create a loyalty system for your community/project
 
-Let's explore each of these properties that make Astraly Badges unique.
+The token incentives currently built in most projects are based on a single verifiable on-chain factor, and are very inefficient. In the future, projects will be able to build their own on-chain loyalty system, based on the contributions of the different actors to the ecosystem, and thus control the incentives for all the actors of a network. We are currently working on making this use case a very simple one for projects, with a setup in a few clicks.
 
-## Trustless
+## Gate access based on reputation
 
-Astraly is built on top of [**Fossil**](https://github.com/OilerNetwork/fossil) which is a Starknet native library that allows us to read all historical L1's(or other L2s) data and use it in a fully trustless manner. We recommend reading this article for a more thorough introduction.
-Regarding storage proofs, the only trust assumption is that the blockhash returned from the Ethereum provider belongs to the claimed block. If you're using your own node, then there is nothing to trust.
+The fact that all components of the reputation system are on-chain makes it very easy for developers to integrate scores and badges directly into their contracts on Starknet and elsewhere, and thus to gate some access to certain features of smart contracts based on reputation.
 
-## Interoperable
+## Personalized curation
 
-Badges can be used anywhere with any tooling that supports ERC-721.
-Therefore, you can gate access to your Discord using https://guild.xyz/, build custom user feeds using https://lens.xyz/ and more...
+As explained in the introduction, curation has become more important than creation. Nevertheless, curation algorithms, especially in Web2, have shown their limits, with too little personalization possible, and the total control of the narrative imposed on the user who cannot escape from this domination. In Web3, we will have all the content available on-chain, owned by the users. From there, to curate this content, personalized algorithms can be created to give the best curation for each user, depending on what he wants to see. These algorithms will be based on the personalized scores created by any user, and will offer a personalized curation of the content.
 
-## Composable
-
-Badges can be composed together to form more complex kinds of badges.
-Let's say you want to create a Lending Master badge.
-You could take Aave, Compound and ZkLend badges and combine them together using an OR relationship. Any kind of conditional expression can be used to combine them and properties will be kept as they are grouped.
-Anyone can create an Astraly Badge! So feel free to create yours and see if it gets some interest. With this collective approach, we aim to find the most relevant kind of badges aka. on-chain activities that exist and form your digital identity.
-
-## Zero-Knowledge
-
-Astraly Badges can be made private so that they do not reveal any information about the user that signed the message used to mint the badge.
-STARK proofs are used to achieve full privacy, along with the [**Giza prover**](https://github.com/maxgillett/giza) which is still under development. We highly recommend going over [**Max Gillet's repo**](https://github.com/maxgillett/stark-attestations) which Astraly is built upon.
-You can contribute to the Giza development and be rewarded thanks to [**OnlyDust**](https://app.onlydust.xyz/projects/476401778)
-
-## Soulbound
-
-Astraly Badges are "soulbound" or "account-bound". However, on Starknet we have native Account Abstraction which you can learn more about here.
-
-As every account is a smart-contract we re-adapted the ERC-4973 standard to fit these constraints and ensure two things :
-
-Users can choose whether to display publicly their badges
-Users can transfer their badges freely with the right signature being provided
-
-On every public key change, the right signature needs to be provided to retrieve all badges linked to that account
-You can find the latest implementation on our GitHub.
-
-## Future developments
-
-Astraly badges will be improved drastically as we grow and evolve.
-A few things we're working on and that will come in future versions of the badges :
-
-- Badges issued from on-chain activity on other L2s such as Optimism, Arbitrum or Polygon
-- Enable anyone to generate a proof locally in a short time < 1 min to achieve full privacy
-- Trustless bridge so that badges can be used on other chains
-- Fully-fledged badges that not only use storage root but also receipt root and transactions root. The end goal is to make every kind of on-chain activity issuable as an Astraly Badge. e.g : A badge that proves you've executed specific transactions, or/and that specific events have been emitted, or/and that you hold a specific balance of a token at a certain point in time
+Interested in building one of these use cases, or do you have other ideas? Contact us on [**Discord**](https://discord.com/invite/astralyxyz) or [**Telegram**](https://t.me/BGLabs).
