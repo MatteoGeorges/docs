@@ -28,7 +28,7 @@ export const actions = [
     title: 'What is Astraly',
     href: '#',
     icon: InformationCircleIcon,
-    to: './protocol/introduction',
+    to: './docs/introduction',
     text: `Learn about the Astraly reputation protocol. Core concepts, vision and next developments.`,
   },
   {
@@ -74,11 +74,6 @@ export const Guides = [
     title: 'SDK Quick Start',
     text: 'Integrate with the Uniswap Protocol using JavaScript',
     to: './sdk/guides/quick-start',
-  },
-  {
-    title: 'Implementing a Swap',
-    text: 'Start swapping from a smart contract in Solidity',
-    to: './protocol/guides/swaps/single-swaps',
   },
   {
     title: 'Embedding a Swap Widget',

@@ -29,7 +29,7 @@ module.exports = {
       },
       items: [
         {
-          to: '/introduction',
+          to: '/docs/introduction',
           label: 'Intro',
           position: 'right',
           className: 'persistent',
@@ -41,7 +41,7 @@ module.exports = {
           className: 'persistent',
         },
         {
-          to: '/protocol/concepts/governance/overview',
+          to: '/protocol/context/governance/overview',
           label: 'Governance',
           position: 'right',
           className: 'persistent',
